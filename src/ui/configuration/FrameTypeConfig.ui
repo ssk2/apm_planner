@@ -7,121 +7,233 @@
     <x>0</x>
     <y>0</y>
     <width>1145</width>
-    <height>627</height>
+    <height>906</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_2">
-   <item>
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>&lt;h2&gt;Frame Setup&lt;/h2&gt;</string>
-     </property>
-     <property name="scaledContents">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </item>
-   <item>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QRadioButton" name="plusRadioButton">
-       <property name="layoutDirection">
-        <enum>Qt::LeftToRight</enum>
-       </property>
-       <property name="text">
-        <string>'Plus' Style</string>
-       </property>
-       <property name="icon">
-        <iconset resource="../../../qgroundcontrol.qrc">
-         <normaloff>:/files/images/mavs/frames_plus.png</normaloff>:/files/images/mavs/frames_plus.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>500</width>
-         <height>150</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QRadioButton" name="xRadioButton">
-       <property name="layoutDirection">
-        <enum>Qt::LeftToRight</enum>
-       </property>
-       <property name="text">
-        <string>'X' Style</string>
-       </property>
-       <property name="icon">
-        <iconset resource="../../../qgroundcontrol.qrc">
-         <normaloff>:/files/images/mavs/frames_x.png</normaloff>:/files/images/mavs/frames_x.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>500</width>
-         <height>150</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QRadioButton" name="vRadioButton">
-       <property name="layoutDirection">
-        <enum>Qt::LeftToRight</enum>
-       </property>
-       <property name="autoFillBackground">
-        <bool>false</bool>
-       </property>
-       <property name="text">
-        <string>'V' Style</string>
-       </property>
-       <property name="icon">
-        <iconset resource="../../../qgroundcontrol.qrc">
-         <normaloff>:/files/images/firmware/quady.png</normaloff>:/files/images/firmware/quady.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>500</width>
-         <height>120</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QRadioButton" name="hRadioButton">
-       <property name="text">
-        <string>'H' Style</string>
-       </property>
-       <property name="icon">
-        <iconset resource="../../../qgroundcontrol.qrc">
-         <normaloff>:/files/images/mavs/frames_quad_I.png</normaloff>:/files/images/mavs/frames_quad_I.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>500</width>
-         <height>120</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <spacer name="verticalSpacer">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>40</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-  </layout>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>12</y>
+     <width>128</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;h2&gt;Frame Setup&lt;/h2&gt;</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>725</width>
+     <height>666</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QRadioButton" name="plusRadioButton">
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="text">
+       <string>'Plus' Style</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>500</width>
+        <height>150</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_2">
+      <property name="maximumSize">
+       <size>
+        <width>626</width>
+        <height>88</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../../../qgroundcontrol.qrc">:/files/images/mavs/frames_plus.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QRadioButton" name="xRadioButton">
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>'X' Style</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>500</width>
+        <height>150</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="label_3">
+      <property name="maximumSize">
+       <size>
+        <width>380</width>
+        <height>88</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../../../qgroundcontrol.qrc">:/files/images/mavs/frames_x.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QRadioButton" name="vRadioButton">
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>'V' Style</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>500</width>
+        <height>120</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="label_4">
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../../../qgroundcontrol.qrc">:/files/images/firmware/quady.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QRadioButton" name="hRadioButton">
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="text">
+       <string>'H' Style</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>500</width>
+        <height>120</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLabel" name="label_5">
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../../../qgroundcontrol.qrc">:/files/images/mavs/frames_quad_I.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QRadioButton" name="radioButton">
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="text">
+       <string>Y6B </string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>500</width>
+        <height>120</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="label_6">
+      <property name="maximumSize">
+       <size>
+        <width>156</width>
+        <height>156</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../../../qgroundcontrol.qrc">:/files/images/mavs/frames-Y6B.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>radioButton</zorder>
+  <zorder>xRadioButton</zorder>
+  <zorder>plusRadioButton</zorder>
+  <zorder>hRadioButton</zorder>
+  <zorder>vRadioButton</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_5</zorder>
  </widget>
  <resources>
   <include location="../../../qgroundcontrol.qrc"/>
